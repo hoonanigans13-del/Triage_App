@@ -1,35 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Triage</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triage</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  <header class="navbar">
-    <a href="/" class="logo">Triage</a>
-    <nav class="nav-links">
-      <a href="/">Home</a>
-      <a href="/about.html">About</a>
-      <a href="/contact.html">Contact</a>
-      <a href="/privacy.html">Privacy</a>
-      <a href="/terms.html">Terms</a>
+
+    <!-- ======== Navbar ======== -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar__brand">Triage</a>
+            <ul class="navbar__links" id="navLinks">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+                <li><a href="terms.html">Terms</a></li>
+            </ul>
+            <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
     </nav>
-  </header>
 
-  <section class="hero">
-    <h1>Your AI. Your Rules.</h1>
-    <p>
-      Triage delivers zero‑knowledge, user‑owned agent systems — autonomous intelligence that works for you, controlled by you, with your data never leaving your hands.
-    </p>
-    <div class="hero-buttons">
-      <a href="/about.html" class="btn">Learn More</a>
-      <a href="/contact.html" class="btn-secondary">Get in Touch</a>
-    </div>
-  </section>
+    <!-- ======== Hero ======== -->
+    <section class="hero">
+        <div class="container" style="text-align: center;">
+            <h1>Your AI. <span style="color:#14C3C9;">Your Rules.</span></h1>
+            <p style="font-size: 1.15rem; max-width: 640px; margin: 0 auto 2.5rem; color: #c8c8c8;">
+                Triage delivers zero‑knowledge, user‑owned agent systems — autonomous intelligence that works for you, controlled by you, with your data never leaving your hands.
+            </p>
+            <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+                <a href="about.html" class="btn btn--primary">Learn More</a>
+                <a href="contact.html" class="btn btn--outline">Get in Touch</a>
+            </div>
+        </div>
+    </section>
 
-  <footer>
-    <p>© 2026 Triage AI LLC. All rights reserved.</p>
-  </footer>
+    <!-- ======== Footer ======== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__brand">
+                    <h3>Triage</h3>
+                    <p>Autonomous, user-owned intelligence — built in Pueblo, CO.</p>
+                </div>
+                <div class="footer__nav">
+                    <h4>Pages</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer__nav">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                &copy; 2026 Triage AI LLC. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('navToggle').addEventListener('click', () => {
+            document.getElementById('navLinks').classList.toggle('open');
+        });
+    </script>
 </body>
 </html>
