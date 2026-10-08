@@ -56,6 +56,8 @@ p  { margin-bottom: 1rem; color: #4d5a70; }
   display: flex; align-items: center; gap: .5rem;
 }
 .navbar__logo { width: 38px; height: 38px; object-fit: cover; border-radius: 8px; }
+.privacy-logo { display: inline-flex; align-items: center; gap: .5rem; color: #17243b; font-weight: 800; }
+.privacy-logo img { width: 38px; height: 38px; object-fit: cover; border-radius: 8px; }
 .navbar__brand span { color: #14C3C9; }
 
 .navbar__links { display: flex; gap: 2rem; list-style: none; }

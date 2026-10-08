@@ -13,7 +13,7 @@
     <!-- ======== Navbar ======== -->
     <nav class="navbar">
         <div class="container">
-            <a href="index.html" class="navbar__brand">Triage</a>
+            <a href="index.html" class="navbar__brand"><img class="navbar__logo" src="https://github.com/user-attachments/assets/f6b47965-d411-404e-852a-81e8874b9808" alt="">Triage</a>
             <ul class="navbar__links" id="navLinks">
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -30,11 +30,12 @@
     <!-- ======== Hero ======== -->
     <section class="hero">
         <div class="container" style="text-align: center;">
-            <h1 style="font-size: 4.5rem; margin-bottom: 1.5rem; font-weight: 900;">Triage</h1>
-            <p style="font-size: 1.25rem; max-width: 680px; margin: 0 auto 2.5rem; color: #c8c8c8;">
+            <img class="hero__logo" src="https://github.com/user-attachments/assets/f6b47965-d411-404e-852a-81e8874b9808" alt="Triage logo: a brain emerging from an envelope">
+            <h1 class="hero__title">Triage</h1>
+            <p class="hero__tagline">
                 Your AI. Your Rules.
             </p>
-            <p style="font-size: 1.05rem; max-width: 680px; margin: 0 auto 2.5rem; color: #c8c8c8; line-height: 1.8;">
+            <p class="hero__description">
                 Triage delivers zero‑knowledge, user‑owned agent systems — autonomous intelligence that works for you, controlled by you, with your data never leaving your hands.
             </p>
             <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
@@ -44,13 +45,59 @@
         </div>
     </section>
 
+    <section class="section feature-section">
+        <div class="container">
+            <div class="feature-section__intro text-center">
+                <h2>Choose Your Triage</h2>
+                <p>Two ways to work with Triage, from everyday assistance to a more security-focused experience.</p>
+            </div>
+            <div class="grid grid--2">
+                <article class="card">
+                    <div class="card__icon" aria-hidden="true">✨</div>
+                    <h3>Everyday</h3>
+                    <p style="margin-bottom:0;">A welcoming, straightforward Triage experience for everyday tasks and workflows.</p>
+                </article>
+                <article class="card">
+                    <div class="card__icon" aria-hidden="true">🔐</div>
+                    <h3>Secure</h3>
+                    <p style="margin-bottom:0;">A security-focused experience for people who want tighter control over their data and how Triage works.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--alt feature-section">
+        <div class="container text-center">
+            <h2>Made for Your Devices</h2>
+            <p class="feature-section__intro">Triage is designed for Linux, PC, Android, and iOS.</p>
+            <ul class="platform-list" aria-label="Supported platforms">
+                <li>Linux</li>
+                <li>PC</li>
+                <li>Android</li>
+                <li>iOS — Xcode wrapper planned</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section plan-range feature-section">
+        <div class="container">
+            <h2>Plans for Every Stage</h2>
+            <p>Options are intended to range from Free to Enterprise.</p>
+            <div class="card">
+                <p style="margin-bottom:1.25rem;">Looking for an individual plan or an enterprise conversation? Contact us and we’ll help you find the right fit.</p>
+                <a href="contact.html" class="btn btn--primary">Ask About Plans</a>
+            </div>
+        </div>
+    </section>
+
     <!-- ======== Footer ======== -->
     <footer class="footer">
         <div class="container">
             <div class="footer__inner">
                 <div class="footer__brand">
+                    <img src="https://github.com/user-attachments/assets/f6b47965-d411-404e-852a-81e8874b9808" alt="">
                     <h3>Triage</h3>
-                    <p>Autonomous, user-owned intelligence — built in Pueblo, CO.</p>
+                    <p>Everyday and security-focused AI experiences for Linux, PC, Android, and iOS.</p>
                 </div>
                 <div class="footer__nav">
                     <h4>Pages</h4>
@@ -79,4 +126,3 @@
             document.getElementById('navLinks').classList.toggle('open');
         });
     </script>
-
